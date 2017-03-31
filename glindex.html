@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>手势密码</title>
+	<style>
+		body {
+			background-color: #F0F0F2;
+			text-align: center;
+		}
+		div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		/*#title {
+			color: #252525;
+			margin: 0;
+			background-color: #F8F8F8;
+			border-bottom: 1px solid #BCBCBC;
+			padding: 20px 0;
+		}*/
+		#gesLock {
+			background-color: #F0F0F2;
+			display: inline-block;
+			margin-top: 40px;
+		}
+		#tip {
+			color: #252525;
+			margin: 20px;
+		}
+		form {
+			margin: 40px 0 0 -30%;
+		}
+		label {
+			margin-top: 20px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<!-- <h2 id="title">手势密码</h2> -->
+		<canvas id="gesLock" width="300" height="300"></canvas>
+		<p id="tip">请输入手势密码</p>
+		<form action="#">
+			<label><input type="radio" name="password" id="setps" checked="checked">设置密码</label>
+			<label><input type="radio" name="password" id="verps">验证密码</label>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="gestlockL.js"></script>
+</body>
+</html>
